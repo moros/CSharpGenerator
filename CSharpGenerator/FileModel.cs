@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace CSharpGenerator
 {
@@ -15,6 +16,8 @@ namespace CSharpGenerator
         }
 
         public List<string> UsingDirectives { get; set; } = new List<string>();
+
+        public List<string> TopLevelComments { get; set; } = new List<string>();
 
         public string Namespace { get; set; }
 
@@ -44,10 +47,17 @@ namespace CSharpGenerator
             }
         }
 
+        public void AddTopLevelComments(params string[] comments)
+        {
+            TopLevelComments.AddRange(comments);
+        }
+
         public override string ToString()
         {
+            var topLevelComments = TopLevelComments.Count == 0 ? "" : string.Join(Util.NewLine, TopLevelComments.Select(str => "//" + str)) + Util.NewLine;
             var usingText = UsingDirectives.Count > 0 ? Util.Using + " " : "";
-            var result = usingText + string.Join(Util.NewLine + usingText, UsingDirectives);
+            var result = topLevelComments + usingText + string.Join(Util.NewLine + usingText, UsingDirectives);
+            result += !string.IsNullOrEmpty(usingText) ? Util.NewLineDouble : "";
             result += Util.Namespace + " " + Namespace;
             result += Util.NewLine + "{";
             result += string.Join(Util.NewLine, Enums);

@@ -66,7 +66,11 @@ namespace CSharpGenerator.Tests
 
             var fileModel = CreateFileModel(model.Name);
             fileModel.Classes.Add(model);
-
+            fileModel.LoadUsingDirectives(new List<string>
+            {
+                "System;"
+            });
+            
             var generator = new FileGenerator
             {
                 RootPath = Directory.GetCurrentDirectory(),

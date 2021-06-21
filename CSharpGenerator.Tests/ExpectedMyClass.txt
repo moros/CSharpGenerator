@@ -1,4 +1,6 @@
-﻿namespace CSharpGenerator.Tests
+﻿using System;
+
+namespace CSharpGenerator.Tests
 {
     public class MyClass : MyBaseClass
     {
