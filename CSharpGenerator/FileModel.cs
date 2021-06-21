@@ -2,7 +2,8 @@
 using System.IO;
 using System.Linq;
 
-namespace CSharpGenerator
+// ReSharper disable once IdentifierTypo
+namespace Moros.CSharpGenerator
 {
     public class FileModel
     {

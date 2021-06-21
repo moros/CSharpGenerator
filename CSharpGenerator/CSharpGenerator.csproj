@@ -7,8 +7,8 @@
     <ProjectGuid>{4DAE5FA6-5F7D-4A63-97A0-47CDF9EBDD3C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpGenerator</RootNamespace>
-    <AssemblyName>CSharpGenerator</AssemblyName>
+    <RootNamespace>Moros.CSharpGenerator</RootNamespace>
+    <AssemblyName>moros.CSharpGenerator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

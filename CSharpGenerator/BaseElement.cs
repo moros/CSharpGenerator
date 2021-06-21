@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CSharpGenerator.Enums;
+using Moros.CSharpGenerator.Enums;
 
-namespace CSharpGenerator
+// ReSharper disable once IdentifierTypo
+namespace Moros.CSharpGenerator
 {
     public abstract class BaseElement
     {

@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
-using CSharpGenerator.Enums;
+using Moros.CSharpGenerator.Enums;
 
-namespace CSharpGenerator
+// ReSharper disable once IdentifierTypo
+namespace Moros.CSharpGenerator
 {
     public class InterfaceModel : BaseElement
     {

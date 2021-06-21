@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CSharpGenerator.Enums;
+using Moros.CSharpGenerator.Enums;
 using static System.String;
 
-namespace CSharpGenerator
+// ReSharper disable once IdentifierTypo
+namespace Moros.CSharpGenerator
 {
     public sealed class ClassModel : BaseElement
     {

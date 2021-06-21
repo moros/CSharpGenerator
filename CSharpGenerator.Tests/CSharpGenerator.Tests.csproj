@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C96E67A6-B9E8-4E24-869E-055B54CD6278}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>CSharpGenerator.Tests</RootNamespace>
-    <AssemblyName>CSharpGenerator.Tests</AssemblyName>
+    <RootNamespace>Moros.CSharpGenerator.Tests</RootNamespace>
+    <AssemblyName>moros.CSharpGenerator.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

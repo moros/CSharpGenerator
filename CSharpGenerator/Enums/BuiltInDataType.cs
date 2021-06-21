@@ -1,4 +1,5 @@
-﻿namespace CSharpGenerator.Enums
+﻿// ReSharper disable once IdentifierTypo
+namespace Moros.CSharpGenerator.Enums
 {
     public enum BuiltInDataType
     {

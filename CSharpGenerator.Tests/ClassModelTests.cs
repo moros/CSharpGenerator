@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using CSharpGenerator.Enums;
+using Moros.CSharpGenerator.Enums;
 using NUnit.Framework;
 
-namespace CSharpGenerator.Tests
+// ReSharper disable once IdentifierTypo
+namespace Moros.CSharpGenerator.Tests
 {
     [TestFixture]
     internal class ClassModelTests

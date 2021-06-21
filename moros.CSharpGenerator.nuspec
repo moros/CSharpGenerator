@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>moros.CSharpGenerator</id>
-    <version>1.0.0</version>
+    <version>1.0.4</version>
     <title>moros.CSharpGenerator</title>
     <authors>Doug Mason</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,7 +15,8 @@
     <tags>generator code-generator</tags>
   </metadata>
   <files>
-    <file src="CSharpGenerator\bin\Release\CSharpGenerator.dll" target="lib\net45"/>
+    <!-- ReSharper disable once MarkupAttributeTypo -->
+    <file src="CSharpGenerator\bin\Release\moros.CSharpGenerator.dll" target="lib\net45"/>
     <file src="CSharpGenerator\bin\Release\icon.png" target="images\" />
   </files>
 </package>

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 
-namespace CSharpGenerator
+// ReSharper disable once IdentifierTypo
+namespace Moros.CSharpGenerator
 {
     public class AttributeModel
     {
