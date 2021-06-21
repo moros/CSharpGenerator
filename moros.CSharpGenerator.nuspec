@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>CSharpGenerator</id>
+    <id>moros.CSharpGenerator</id>
     <version>1.0.0</version>
-    <title>CSharpGenerator</title>
+    <title>moros.CSharpGenerator</title>
     <authors>Doug Mason</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
