@@ -15,7 +15,7 @@
     <tags>generator code-generator</tags>
   </metadata>
   <files>
-    <file src="CSharpGenerator\bin\Release\**.*" target="lib\net45"/>
+    <file src="CSharpGenerator\bin\Release\CSharpGenerator.dll" target="lib\net45"/>
     <file src="icon.png" target="images\" />
   </files>
 </package>
