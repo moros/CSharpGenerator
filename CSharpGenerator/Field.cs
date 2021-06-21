@@ -4,13 +4,29 @@ namespace CSharpGenerator
 {
     public class Field : BaseElement
     {
-        public Field() { }
+        public Field()
+        {
+        }
 
-        public Field(BuiltInDataType builtInDataType, string name) : base(builtInDataType, name) { }
+        public Field(BuiltInDataType builtInDataType, string name) : base(builtInDataType, name)
+        {
+        }
 
-        public Field(string customDataType, string name) : base(customDataType, name) { }
+        public Field(string customDataType, string name) : base(customDataType, name)
+        {
+        }
 
-        public override AccessModifier AccessModifier { get; set; } = AccessModifier.Protected;
+        public Field(AccessModifier modifier, BuiltInDataType builtInDataType, string name) : base(builtInDataType, name)
+        {
+            AccessModifier = modifier;
+        }
+
+        public Field(AccessModifier modifier, string customDataType, string name) : base(customDataType, name)
+        {
+            AccessModifier = modifier;
+        }
+
+        public override AccessModifier AccessModifier { get; set; } = AccessModifier.Private;
 
         public virtual string Body { get; }
 

@@ -16,7 +16,7 @@ namespace CSharpGenerator
 
         public string RootPath { get; set; }
 
-        public Dictionary<string, FileModel> Files { get; set; } = new Dictionary<string, FileModel>();
+        public List<FileModel> Files { get; set; } = new List<FileModel>();
 
         public void CreateFiles()
         {
@@ -43,9 +43,9 @@ namespace CSharpGenerator
 
             Console.WriteLine("Created files: ");
             var num = 1;
-            foreach (var fileModel in this.Files.Values)
+            foreach (var fileModel in Files)
             {
-                var fullPath = $"{path}\\{OutputDirectory}\\{fileModel.FullName}";
+                var fullPath = Path.Combine(Path.Combine(path, OutputDirectory), fileModel.FullName);
                 var dirPath = Path.GetDirectoryName(fullPath);
                 if (dirPath != null && !Directory.Exists(dirPath))
                 {

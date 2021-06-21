@@ -1,0 +1,30 @@
+﻿namespace CSharpGenerator.Tests
+{
+    public class MyClass : MyBaseClass
+    {
+        private int field1;
+        private int field2;
+        public bool somePublicField;
+
+        public MyClass() { }
+
+        public MyClass(ILogger logger) : base(logger)
+        {
+        }
+
+        public int Prop1 { get; set; }
+
+        public int Prop2 { get; set; }
+
+        public void Start(SomeType param1, SomeType param2)
+        {
+            Execute(param1, param2)
+        }
+
+        public void Stop()
+        {
+            Stop1()
+            Stop2()
+        }
+    }
+}

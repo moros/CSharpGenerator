@@ -55,21 +55,18 @@ namespace CSharpGenerator
 
             result += Join("", Fields);
 
-            var visibleConstructors = Constructors.Where(a => a.IsVisible);
+            var visibleConstructors = Constructors.Where(a => a.IsVisible).ToList();
             var hasFieldsBeforeConstructor = visibleConstructors.Any() && Fields.Any();
             result += hasFieldsBeforeConstructor ? Util.NewLine : "";
             result += Join(Util.NewLine, visibleConstructors);
-            var hasMembersAfterConstructor = (visibleConstructors.Any() || Fields.Any()) && (Properties.Any() || Methods.Any());
+
+            var hasMembersAfterConstructor = visibleConstructors.Any() || Fields.Any() || Properties.Any() || Methods.Any();
             result += hasMembersAfterConstructor ? Util.NewLine : "";
-
             result += Join(HasPropertiesSpacing ? Util.NewLine : "", Properties);
-
             result += hasMembersAfterConstructor ? Util.NewLine : "";
             result += Join(Util.NewLine, Methods);
-
             result += NestedClasses.Count > 0 ? Util.NewLine : "";
             result += Join(Util.NewLine, NestedClasses);
-
             result += Util.NewLine + Indent + "}";
             
             return result;
